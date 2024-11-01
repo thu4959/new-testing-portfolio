@@ -1,0 +1,22 @@
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.border {
+    border: 1px solid #dfdfdf;]
+    border-radius: 4px;
+}
+.bg-default{
+    background-color: aqua;
+}
+.bold {
+    font-weight: bolder;
+}
+p.underline {
+    text-decoration: underline;
+}
+.text-red {
+    color: red;
+}
