@@ -1,22 +1,53 @@
-
 .container {
-    max-width: 480px;
+    width: 1000px;
     margin: 0 auto;
     padding: 1rem;
+    opacity: 0;
+    /* Start fully transparent */
+    transform: translateY(20px);
+    /* Start slightly below */
+    animation: fadeInOut 15s infinite;
+    /* animation-duration: 1s; */
+    animation-play-state: running;
+    /* Animation name, duration, and keep final state */
 }
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.5;
+        /* Fully transparent */
+    }
+
+    100% {
+        opacity: 1;
+        /* Fully transparent again */
+    }
+}
+
 .border {
-    border: 1px solid #dfdfdf;]
+    border: 1px dashed #dfdfdf;
     border-radius: 4px;
 }
-.bg-default{
+
+.bg-default {
     background-color: aqua;
+    /* opacity: 0; */
 }
+
 .bold {
     font-weight: bolder;
 }
+
 p.underline {
     text-decoration: underline;
 }
+
 .text-red {
     color: red;
+}
+
+.bigcontainer {
+    display: flex;
+    flex-wrap: wrap;
+
 }
