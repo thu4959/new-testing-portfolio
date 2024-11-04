@@ -1,7 +1,30 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    border-bottom: solid;
+    padding: 10px;
+    background-color: #60992e33;
+}
+
+.navitem {
+    text-decoration: none;
+    padding: 8px
+}
+
+.navitem:hover {
+    color: #e20b0be3;
+}
+
+
 .container {
-    width: 1000px;
+    width: 700px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 2px;
     opacity: 0;
     /* Start fully transparent */
     transform: translateY(20px);
@@ -10,6 +33,7 @@
     /* animation-duration: 1s; */
     animation-play-state: running;
     /* Animation name, duration, and keep final state */
+    height: 80vh;
 }
 
 @keyframes fadeInOut {
@@ -24,10 +48,11 @@
     }
 }
 
+/* 
 .border {
     border: 1px dashed #dfdfdf;
     border-radius: 4px;
-}
+} */
 
 .bg-default {
     background-color: aqua;
