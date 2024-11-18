@@ -76,3 +76,30 @@ p.underline {
     flex-wrap: wrap;
 
 }
+
+footer {
+    background-color: #282c34;
+    /* Dark background color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between icons */
+}
+
+.social-links a img {
+    width: 40px;
+    /* Icon size */
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2);
+    /* Slightly enlarge on hover */
+}
