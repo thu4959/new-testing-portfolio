@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
 }
 
 .hero-section {
@@ -127,31 +130,23 @@ nav ul li a {
 }
 
 
-
 .container {
-    width: 700px;
-    margin: 0 auto;
-    padding: 0 2px;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-out forwards;
     opacity: 0;
-    /* Start fully transparent */
     transform: translateY(20px);
-    /* Start slightly below */
-    animation: fadeInOut 5s infinite;
-    /* animation-duration: 1s; */
-    animation-play-state: running;
-    /* Animation name, duration, and keep final state */
-    height: 80vh;
 }
 
-@keyframes fadeInOut {
-    0% {
-        opacity: 0.5;
-        /* Fully transparent */
-    }
-
-    100% {
+@keyframes fadeIn {
+    to {
         opacity: 1;
-        /* Fully transparent again */
+        transform: translateY(0);
     }
 }
 
@@ -162,8 +157,10 @@ nav ul li a {
 } */
 
 .bg-default {
-    background-color: aqua;
-    /* opacity: 0; */
+    background-color: #333;
+    color: #00d1d1;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .bold {
@@ -184,6 +181,93 @@ p.underline {
 
 }
 
+/* Update 21-4 25*/
+/* Contact Form Dark Styling */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+button.ctm {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button.ctm:hover {
+    background-color: #008fcc;
+}
+
+/* Update link colors for dark background */
+a {
+    color: #00d1d1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66ffff;
+}
+
+/* Update 21-4 25*/
+
+
+#about,
+#projects,
+#contact {
+    min-height: 100vh;
+    /* Screen အနည်းဆုံးအရွယ် */
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* content ကို center align လုပ်မယ် */
+}
+
+#about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+#projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #222;
+    color: white;
+}
+
+#contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+
+
+
 footer {
     background-color: #282c34;
     /* Dark background color */
@@ -196,17 +280,17 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* Space between icons */
+
 }
 
 .social-links a img {
     width: 40px;
-    /* Icon size */
+
     height: 40px;
     transition: transform 0.3s;
 }
 
 .social-links a img:hover {
     transform: scale(1.2);
-    /* Slightly enlarge on hover */
+
 }
