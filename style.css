@@ -181,6 +181,12 @@ p.underline {
 
 }
 
+.section-title {
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
 /* Update 21-4 25*/
 /* Contact Form Dark Styling */
 form input,
