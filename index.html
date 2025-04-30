@@ -33,48 +33,62 @@
 
 
     <div class="bigcontainer">
-        <div class="container border">
+        <div class="section" id="about">
 
-            <div class="bg-default section-title">About</div>
-            <p class="">
-                My name is Thurein Htun,from Myanmar.I came to Japan in 2019 after marrying with my wife working in
-                japan.
-                Than I studied Japanese language at HUMAN Academy Japanese language school from october,2019 to
-                february,2021.Then I joined
-                SUNDAI IT college at april,2024 and up to now.
-            </p>
-            <div></div>
-            <div></div>
+            <div class="section-title">About</div>
+            <div>
+                <p class="section-para">
+                    My name is Thurein Htun,from Myanmar.I came to Japan in 2019 after marrying with my wife working in
+                    japan.
+                    Than I studied Japanese language at HUMAN Academy Japanese language school from october,2019 to
+                    february,2021.Then I joined
+                    SUNDAI IT college at april,2024 and up to now.
+                </p>
+                <div></div>
+                <div></div>
+            </div>
         </div>
         <!-- <h1 class="bg-default">Projects</h1> -->
-        <div id="projects" class="container border">
+        <div class="section" id="projects">
+            <div class="section-title">Projects</div>
 
-            <a class="bg-default section-title" href="https://thu4959.github.io/weather-dashboard/"
-                target="_blank">Weather
-                Dashboard</a>
-            <image src="./before-search.png">
-                <image src="./after-search.png">
+            <div
+                style="display:flex ;flex-direction:column; gap: 30px; padding-top: 50px; max-width: 600px; margin: 10px auto;">
+                <a style="font-size: 20px; font-weight: 600; text-decoration:underline;color: rgb(202, 202, 202); margin-left: 10px;"
+                    href="https://thu4959.github.io/weather-dashboard/" target="_blank">Weather Dashboard
+                </a>
+                <p style="font-size: 16px; font-weight: 600; color: rgb(160, 160, 160); margin: 0   10px; ">This project
+                    is a weather dashboard that displays the current weather for a city. User has to type search for a
+                    city. In the background, I use weather api to get the current weather data.</p>
+                <image src="./before-search.png" class="section-image">
+                    <image src="./after-search.png" class="section-image">
+            </div>
         </div>
         <!-- <div>still in process</div> -->
-    </div>
-    <div class="container border">
-        <div class="bg-default section-title">Contact</div>
+        <div class="section" id="contact">
+            <div class="section-title">Contact</div>
 
-        <!-- form fields -->
+            <!-- form fields -->
 
+            <div style="display:flex ;flex-direction:column; gap: 10px; margin: 10px auto;">
 
-        <form>
-            <input type="text" class="form-control form-control-lg" placeholder="Name">
-            <input type="email" class="form-control mt-3" placeholder="Email">
-            <input type="text" class="form-control mt-3" placeholder="Phone">
-            <div class="mb-3 mt-3">
-                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message"></textarea>
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Phone">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <p style="font-size: small; color: gray;">Still in process</p>
+                </form>
+                <button type="button" class="ctm">Contact Me </button>
+
+                <!-- <div>still in process</div>
+            <div>still in process</div> -->
+
             </div>
-        </form>
-        <button type="button" class="ctm">Contact Me </button>
-
-        <div>still in process</div>
-        <div>still in process</div>
+        </div>
     </div>
     </div>
     <footer>
